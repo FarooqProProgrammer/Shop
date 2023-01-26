@@ -1,7 +1,6 @@
 import React from 'react'
-import "./Product.css"
 
-export default function Product() {
+const ProductGallery = () => {
     const ProductData = [
         {
             title:"Card Title",
@@ -22,14 +21,15 @@ export default function Product() {
         
     ]
     
+
   return (
-    <div className='Product w-full h-auto '>
-        <div className="title">
-            <h2 className='lg:text-4xl md:text-xl sm:text-[16px] font-bold'>Featured Products</h2>
-        </div>
-        <div className="productCard w-full h-auto  grid lg:grid-cols-3 md:grid-cols-2 gap-2 sm:grid-cols-1 place-items-center">
-        
-            {ProductData.map((item)=>{
+    <div className='w-[80%] h-screen  overflow-auto'>
+        <div className="swicth w-full h-11 border-2 border-black"></div>
+        <div className="product w-full h-auto   grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 place-items-center gap-4">
+
+
+
+        {ProductData.map((item)=>{
                 return(
                     <div class="card" style={{width: "18rem"}}>
                     <img src={item.cardImage} class="card-img-top" alt="..."/>
@@ -41,12 +41,12 @@ export default function Product() {
                     </div>
                 )
             })}
-        
-      
-        
-            
-            
+
+
+
         </div>
     </div>
   )
 }
+
+export default ProductGallery
