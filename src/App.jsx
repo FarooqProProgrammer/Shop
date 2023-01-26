@@ -4,7 +4,7 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Home from './pages/Home'
 import Products from './pages/Product'
-import SingleProduct from './pages/SingleProduct'
+import SingleProuduct from './pages/SingleProduct'
 
 
 
