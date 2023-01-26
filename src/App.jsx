@@ -5,6 +5,8 @@ import Contact from './pages/Contact'
 import Home from './pages/Home'
 import Products from './pages/Product'
 import SingleProuduct from './pages/SingleProduct'
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
 
 
 
@@ -13,7 +15,7 @@ export default function App() {
   return (
   
       <BrowserRouter>
-    
+          <Header/>
           <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='/About' element={<About/>}/>
@@ -22,7 +24,7 @@ export default function App() {
             <Route path='/Single/:id' element={<SingleProuduct/>}/>
 
           </Routes>
-        
+        <Footer/>
       </BrowserRouter>
       
  
